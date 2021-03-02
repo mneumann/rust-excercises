@@ -22,14 +22,14 @@ complete it's implementation.
 
 Hint: Run tests with `cargo test --test test_sqrt`.
 
-## Assignement 2
+## Assignment 2
 
 Fix `sqrt2` in `src/sqrt2.rs`. Return `None` in case the function is not
 defined at the input value, otherwise `Some(x)`.
 
 Run tests with `cargo test --test test_sqrt2`.
 
-## Assignement 3
+## Assignment 3
 
 Implement `sqrt3` in `src/sqrt3.rs`. Instead of using an `Option<f32>`, use a
 `Result` instead.
@@ -37,12 +37,12 @@ Implement `sqrt3` in `src/sqrt3.rs`. Instead of using an `Option<f32>`, use a
 Also create a test suite for `sqrt3` in file `tests/test_sqrt3.rs`. You can
 base this on `tests/test_sqrt2.rs`.
 
-## Assignement 4a (advanced)
+## Assignment 4a (advanced)
 
 What are the downsides of the approaches we have implemented in Assignment 1-3?
 Write them down!
 
-## Assignement 4b (advanced)
+## Assignment 4b (advanced)
 
 Open `src/sqrt4.rs`. Create a new type `NonNegativeFloat` and implement `sqrt`
 on this type. The purpose of this new type is to encapsulate a number that is
@@ -52,12 +52,12 @@ negative number. This means, that your `sqrt` implementation cannot fail.
 Uncomment and run the test suite `tests/test_sqrt4.rs` to ensure correct
 behaviour.
 
-## Assignement 4c (advanced)
+## Assignment 4c (advanced)
 
 Implement the `TryFrom` trait for `NonNegativeFloat`, and add one more test
 case to `tests/test_sqrt4.rs`.
 
-## Assignement 5
+## Assignment 5
 
 Think about the consequences of the `newtype` approach that we learned in
 Assignment 4. If you want, call someone of the team and discuss the pros and
