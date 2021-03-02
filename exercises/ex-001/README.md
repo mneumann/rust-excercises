@@ -46,15 +46,20 @@ Write them down!
 
 Open `src/sqrt4.rs`. Create a new type `NonNegativeFloat` and implement `sqrt`
 on this type. The purpose of this new type is to encapsulate a number that is
-known to be non-negative. You cannot construct a value of this type for a
-negative number. This means, that your `sqrt` implementation cannot fail.
+known to be non-negative.
+
+As we do not allow to create an instance of this type with a negative number
+(by using Rust's privacy features), holding an instance of that type equals a
+mathematical proof that the number is non-negative.  As a result of this, your
+`sqrt` implementation is no longer _partially_ defined and as such cannot fail
+anymore.
 
 Uncomment and run the test suite `tests/test_sqrt4.rs` to ensure correct
 behaviour.
 
 ## Assignment 4c (advanced)
 
-Implement the `TryFrom` trait for `NonNegativeFloat`, and add one more test
+Implement the `TryFrom` trait for `NonNegativeFloat` and add one more test
 case to `tests/test_sqrt4.rs`.
 
 ## Assignment 5
