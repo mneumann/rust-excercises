@@ -21,7 +21,7 @@ impl HttpHeaders {
         unimplemented!()
     }
 
-    /// Returns an `Iterator` over the key/value pairs.
+    /// Returns an `Iterator` that iterates over the key/value pairs.
     pub fn iter<'a>(&'a self) -> impl Iterator<Item = (String, String)> + 'a {
         // FIXME
         std::iter::empty()
