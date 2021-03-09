@@ -42,6 +42,10 @@ base this on `tests/test_sqrt2.rs`.
 What are the downsides of the approaches we have implemented in Assignment 1-3?
 Write them down!
 
+* Have to perform validation for every function call.
+
+* Have to handle errors at the call site.
+
 ## Assignment 4b (advanced)
 
 Open `src/sqrt4.rs`. Create a new type `NonNegativeFloat` and implement `sqrt`

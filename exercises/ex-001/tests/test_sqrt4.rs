@@ -1,4 +1,5 @@
-/*
+use ex_001::*;
+
 #[test]
 fn can_construct_non_negative_float_from_non_negative_value() {
     assert_eq!(16.0, NonNegativeFloat::new(16.0).value());
@@ -15,4 +16,3 @@ fn non_negative_float_fails_to_construct_given_negative_value() {
 fn non_negative_float_calculates_sqrt_correctly() {
     assert_eq!(4.0, NonNegativeFloat::new(16.0).sqrt().value());
 }
-*/
